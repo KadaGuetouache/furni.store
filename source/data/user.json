@@ -1,0 +1,33 @@
+{ 
+	"Link": [ 
+		{ 
+			"name": "Home",
+			"url": "/"
+		},
+		{ 
+			"name": "about",
+			"url": "/about"
+		},
+		{ 
+			"name": "contact",
+			"url": "/contact"
+		}
+	],
+	"User": [ 
+		{ 
+			"username": "wail",
+			"password": "wail123",
+			"name": "Kada Guetouache",
+			"email": "mail@kadaguetouache.com",
+			"website": "kadaguetouache.com",
+			"titles": [{ 
+				"DevOps": "developer",
+				"Bloger": "blog about websites"
+			},
+			{ 
+				"DevOps": "Designer",
+				"Bloger": "Desgn about websites"
+			}]
+		}
+	]
+}

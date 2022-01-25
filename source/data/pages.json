@@ -1,0 +1,12 @@
+{ 
+	"pages": { 
+		"home": { 
+			"title": "Home",
+			"description": "Cuppuccino is nomad coffeeshop for remote workers"
+		} ,
+		"about": { 
+			"title": "About",
+			"description": "Who is cuppuccino nomad coffeeshop"
+		}
+	}
+}
