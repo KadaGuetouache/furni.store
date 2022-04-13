@@ -107,10 +107,16 @@ function server(cb) {
 	cb();
 }
 
+function reload(cb){ 
+	browserSync.reload()
+
+	cb()
+}
+
 function watcher(cb) {
 	watch( './source/scss/**/**/*.scss', styles )
-	watch( scripts ).on( 'change', parallel( js, browserSync.reload ) )
-	watch( [ './source/templates/**/*.+(njk)', './source/data/*.json' ] ).on( 'change', series( Nunjucks, browserSync.reload ) )
+	watch( scripts ).on( 'change', parallel( js, reload ) )
+	watch( [ './source/templates/**/*.+(njk)', './source/data/*.json' ] ).on( 'change', series( Nunjucks, reload ) )
 
 	cb();
 }
