@@ -84,7 +84,7 @@ function styles(cb) {
 function js(cb) {
 	src(scripts)
 		//.pipe( babel( { presets: [ '@babel/preset-env' ] } ) )
-		.pipe(concat('main.js'))
+		// .pipe(concat('main.js'))
 		.pipe(gulpif(env === "production", jsUglify()))
 		.pipe(dest(`${outputDir}/scripts`))
 
@@ -126,6 +126,7 @@ function reload(cb) {
 
 function watcher(cb) {
 	watch('./scss/**/**/*.scss', styles)
+	watch('./assets/*').on('change', reload)
 	watch(scripts).on('change', parallel(js, reload))
 	watch(['./templates/**/*.+(njk)', './data/*.json']).on('change', series(Nunjucks, reload))
 
