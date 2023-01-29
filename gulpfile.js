@@ -38,7 +38,7 @@ if (env == "development") {
 
 const scssPages = ["./scss/main.scss"];
 const templates = ["./templates/*.njk"];
-const scripts = "./js/**/*.js";
+const scripts = "./scripts/**/*.js";
 
 
 // Remove  files
