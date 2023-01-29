@@ -7,9 +7,10 @@
   "author": "Kada Guetouache",
   "license": "MIT",
   "devDependencies": {
-    "browser-sync": "^2.27.7",
-    "del": "^6.0.0",
-    "fs": "^0.0.1-security",
+    "autoprefixer": "^10.4.13",
+    "browser-sync": "^2.27.11",
+    "del": "^7.0.0",
+    "fs": "0.0.1-security",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
     "gulp-concat": "^2.6.1",
@@ -18,8 +19,11 @@
     "gulp-minify-html": "^1.0.6",
     "gulp-nunjucks-render": "^2.2.3",
     "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^9.0.1",
     "gulp-sass": "^5.1.0",
     "gulp-uglify": "^3.0.2",
-    "sass": "^1.47.0"
+    "postcss": "^8.4.21",
+    "sass": "^1.57.1",
+    "tailwindcss": "^3.2.4"
   }
 }
